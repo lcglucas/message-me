@@ -6,23 +6,23 @@
 <div class="ui placeholder segment">
   <div class="ui two column very relaxed stackable grid">
     <div class="column">
-      <div class="ui form">
+      <%= form_with model: @user, url: login_path, class: "ui form" do |form| %>
         <div class="field">
-          <label>Username</label>
+          <%= form.label :username, "Username" %>
           <div class="ui left icon input">
-            <input type="text" placeholder="Username">
+            <%= form.text_field :username %>
             <i class="user icon"></i>
           </div>
         </div>
         <div class="field">
-          <label>Password</label>
+          <%= form.label :password, "Password" %>
           <div class="ui left icon input">
-            <input type="password">
-            <i class="lock icon"></i>
+            <%= form.password_field :password %>
+            <i class="user icon"></i>
           </div>
         </div>
-        <div class="ui red submit button">Login</div>
-      </div>
+        <%= form.submit "Log in", class: "ui red submit button" %>
+      <% end %>
     </div>
     <div class="middle aligned column">
       <div class="ui big button red">
