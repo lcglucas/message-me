@@ -6,7 +6,7 @@
 <div class="ui placeholder segment">
   <div class="ui two column very relaxed stackable grid">
     <div class="column">
-      <%= form_with model: @user, url: login_path, class: "ui form" do |form| %>
+      <%= form_with(model: @user, url: login_path, class: "ui form") do |form| %>
         <div class="field">
           <%= form.label :username, "Username" %>
           <div class="ui left icon input">
