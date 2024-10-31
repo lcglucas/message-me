@@ -23,15 +23,12 @@
   </div>
   <div class="four wide column">
     <div class="ui inverted vertical menu fluid">
-      <a class="active item">
-        Home
-      </a>
-      <a class="item">
-        Messages
-      </a>
-      <a class="item">
-        Friends
-      </a>
+      <div class="item">
+        Online users
+      </div>
+      <div id="users-list">
+        <%= render @users %>
+      </div>
     </div>
   </div>
 </div>

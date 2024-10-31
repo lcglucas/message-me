@@ -34,5 +34,6 @@
 
       scroll_bottom();
     </script>
+    <%= turbo_stream_from "users_online", channel: OnlineChannel %>
   </body>
 </html>
