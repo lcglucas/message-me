@@ -26,15 +26,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script>
+      scroll_bottom = function() { $("#messages").scrollTop($("#messages")[0].scrollHeight); }
+
       $(".ui.dropdown").dropdown();
 
+      $('.message .close').on('click', function() {$(this).closest('.message').transition('fade');});
 
-      $('.message .close')
-        .on('click', function() {
-          $(this).closest('.message').transition('fade')
-          ;
-        })
-      ;
+      scroll_bottom();
     </script>
   </body>
 </html>
