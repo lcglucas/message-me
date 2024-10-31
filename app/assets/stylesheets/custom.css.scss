@@ -9,3 +9,12 @@
   height: 15em;
   overflow-y: auto;
 }
+
+#online-badge {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #00ff00;
+  border-radius: 20px;
+  margin-right: 5px;
+}
